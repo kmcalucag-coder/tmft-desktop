@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Offline</title>
+  <style>
+    html, body { height: 100%; margin: 0; font-family: system-ui, Segoe UI, Arial; background: #0b1220; color: #e5e7eb; }
+    .wrap { height: 100%; display: grid; place-items: center; padding: 24px; text-align: center; }
+    .card { width: min(520px, 92vw); background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.08);
+            border-radius: 18px; padding: 22px; box-shadow: 0 20px 60px rgba(0,0,0,.35); }
+    h1 { margin: 0 0 8px; font-size: 20px; }
+    p { margin: 0 0 14px; opacity: .8; font-size: 13px; line-height: 1.4; }
+    button { cursor: pointer; border: 0; border-radius: 12px; padding: 10px 14px; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>You’re offline</h1>
+      <p>TMFT Desktop can’t reach the server. Check your internet connection, then reopen the app.</p>
+      <p><b>Tip:</b> If Wi-Fi is fine, try closing the app from the tray and opening it again.</p>
+      <button onclick="window.location.reload()">Retry</button>
+    </div>
+  </div>
+</body>
+</html>
